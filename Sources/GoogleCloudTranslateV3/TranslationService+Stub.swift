@@ -28,23 +28,23 @@ extension Clients {
   protocol TranslationServiceStub {
     func translateText(
       request: TranslateTextRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTranslationV3.TranslateTextResponse
+    ) async throws -> GoogleCloudTranslateV3.TranslateTextResponse
 
     func romanizeText(
       request: RomanizeTextRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTranslationV3.RomanizeTextResponse
+    ) async throws -> GoogleCloudTranslateV3.RomanizeTextResponse
 
     func detectLanguage(
       request: DetectLanguageRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTranslationV3.DetectLanguageResponse
+    ) async throws -> GoogleCloudTranslateV3.DetectLanguageResponse
 
     func getSupportedLanguages(
       request: GetSupportedLanguagesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTranslationV3.SupportedLanguages
+    ) async throws -> GoogleCloudTranslateV3.SupportedLanguages
 
     func translateDocument(
       request: TranslateDocumentRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTranslationV3.TranslateDocumentResponse
+    ) async throws -> GoogleCloudTranslateV3.TranslateDocumentResponse
 
     func batchTranslateText(
       request: BatchTranslateTextRequest, options: GoogleCloudGax.RequestOptions
@@ -64,11 +64,11 @@ extension Clients {
 
     func listGlossaries(
       request: ListGlossariesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTranslationV3.ListGlossariesResponse
+    ) async throws -> GoogleCloudTranslateV3.ListGlossariesResponse
 
     func getGlossary(
       request: GetGlossaryRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTranslationV3.Glossary
+    ) async throws -> GoogleCloudTranslateV3.Glossary
 
     func deleteGlossary(
       request: DeleteGlossaryRequest, options: GoogleCloudGax.RequestOptions
@@ -76,19 +76,19 @@ extension Clients {
 
     func getGlossaryEntry(
       request: GetGlossaryEntryRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTranslationV3.GlossaryEntry
+    ) async throws -> GoogleCloudTranslateV3.GlossaryEntry
 
     func listGlossaryEntries(
       request: ListGlossaryEntriesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTranslationV3.ListGlossaryEntriesResponse
+    ) async throws -> GoogleCloudTranslateV3.ListGlossaryEntriesResponse
 
     func createGlossaryEntry(
       request: CreateGlossaryEntryRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTranslationV3.GlossaryEntry
+    ) async throws -> GoogleCloudTranslateV3.GlossaryEntry
 
     func updateGlossaryEntry(
       request: UpdateGlossaryEntryRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTranslationV3.GlossaryEntry
+    ) async throws -> GoogleCloudTranslateV3.GlossaryEntry
 
     func deleteGlossaryEntry(
       request: DeleteGlossaryEntryRequest, options: GoogleCloudGax.RequestOptions
@@ -100,11 +100,11 @@ extension Clients {
 
     func getDataset(
       request: GetDatasetRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTranslationV3.Dataset
+    ) async throws -> GoogleCloudTranslateV3.Dataset
 
     func listDatasets(
       request: ListDatasetsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTranslationV3.ListDatasetsResponse
+    ) async throws -> GoogleCloudTranslateV3.ListDatasetsResponse
 
     func deleteDataset(
       request: DeleteDatasetRequest, options: GoogleCloudGax.RequestOptions
@@ -112,7 +112,7 @@ extension Clients {
 
     func createAdaptiveMtDataset(
       request: CreateAdaptiveMtDatasetRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTranslationV3.AdaptiveMtDataset
+    ) async throws -> GoogleCloudTranslateV3.AdaptiveMtDataset
 
     func deleteAdaptiveMtDataset(
       request: DeleteAdaptiveMtDatasetRequest, options: GoogleCloudGax.RequestOptions
@@ -120,19 +120,19 @@ extension Clients {
 
     func getAdaptiveMtDataset(
       request: GetAdaptiveMtDatasetRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTranslationV3.AdaptiveMtDataset
+    ) async throws -> GoogleCloudTranslateV3.AdaptiveMtDataset
 
     func listAdaptiveMtDatasets(
       request: ListAdaptiveMtDatasetsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTranslationV3.ListAdaptiveMtDatasetsResponse
+    ) async throws -> GoogleCloudTranslateV3.ListAdaptiveMtDatasetsResponse
 
     func adaptiveMtTranslate(
       request: AdaptiveMtTranslateRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTranslationV3.AdaptiveMtTranslateResponse
+    ) async throws -> GoogleCloudTranslateV3.AdaptiveMtTranslateResponse
 
     func getAdaptiveMtFile(
       request: GetAdaptiveMtFileRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTranslationV3.AdaptiveMtFile
+    ) async throws -> GoogleCloudTranslateV3.AdaptiveMtFile
 
     func deleteAdaptiveMtFile(
       request: DeleteAdaptiveMtFileRequest, options: GoogleCloudGax.RequestOptions
@@ -140,15 +140,15 @@ extension Clients {
 
     func importAdaptiveMtFile(
       request: ImportAdaptiveMtFileRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTranslationV3.ImportAdaptiveMtFileResponse
+    ) async throws -> GoogleCloudTranslateV3.ImportAdaptiveMtFileResponse
 
     func listAdaptiveMtFiles(
       request: ListAdaptiveMtFilesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTranslationV3.ListAdaptiveMtFilesResponse
+    ) async throws -> GoogleCloudTranslateV3.ListAdaptiveMtFilesResponse
 
     func listAdaptiveMtSentences(
       request: ListAdaptiveMtSentencesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTranslationV3.ListAdaptiveMtSentencesResponse
+    ) async throws -> GoogleCloudTranslateV3.ListAdaptiveMtSentencesResponse
 
     func importData(
       request: ImportDataRequest, options: GoogleCloudGax.RequestOptions
@@ -160,7 +160,7 @@ extension Clients {
 
     func listExamples(
       request: ListExamplesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTranslationV3.ListExamplesResponse
+    ) async throws -> GoogleCloudTranslateV3.ListExamplesResponse
 
     func createModel(
       request: CreateModelRequest, options: GoogleCloudGax.RequestOptions
@@ -168,11 +168,11 @@ extension Clients {
 
     func listModels(
       request: ListModelsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTranslationV3.ListModelsResponse
+    ) async throws -> GoogleCloudTranslateV3.ListModelsResponse
 
     func getModel(
       request: GetModelRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTranslationV3.Model
+    ) async throws -> GoogleCloudTranslateV3.Model
 
     func deleteModel(
       request: DeleteModelRequest, options: GoogleCloudGax.RequestOptions
@@ -217,7 +217,7 @@ extension Clients {
 
     public func translateText(
       request: TranslateTextRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTranslationV3.TranslateTextResponse {
+    ) async throws -> GoogleCloudTranslateV3.TranslateTextResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -234,12 +234,12 @@ extension Clients {
       req.httpBody = try JSONEncoder().encode(request)
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudTranslationV3.TranslateTextResponse.self, from: data)
+        GoogleCloudTranslateV3.TranslateTextResponse.self, from: data)
     }
 
     public func romanizeText(
       request: RomanizeTextRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTranslationV3.RomanizeTextResponse {
+    ) async throws -> GoogleCloudTranslateV3.RomanizeTextResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -256,12 +256,12 @@ extension Clients {
       req.httpBody = try JSONEncoder().encode(request)
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudTranslationV3.RomanizeTextResponse.self, from: data)
+        GoogleCloudTranslateV3.RomanizeTextResponse.self, from: data)
     }
 
     public func detectLanguage(
       request: DetectLanguageRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTranslationV3.DetectLanguageResponse {
+    ) async throws -> GoogleCloudTranslateV3.DetectLanguageResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -278,12 +278,12 @@ extension Clients {
       req.httpBody = try JSONEncoder().encode(request)
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudTranslationV3.DetectLanguageResponse.self, from: data)
+        GoogleCloudTranslateV3.DetectLanguageResponse.self, from: data)
     }
 
     public func getSupportedLanguages(
       request: GetSupportedLanguagesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTranslationV3.SupportedLanguages {
+    ) async throws -> GoogleCloudTranslateV3.SupportedLanguages {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -302,12 +302,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudTranslationV3.SupportedLanguages.self, from: data)
+        GoogleCloudTranslateV3.SupportedLanguages.self, from: data)
     }
 
     public func translateDocument(
       request: TranslateDocumentRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTranslationV3.TranslateDocumentResponse {
+    ) async throws -> GoogleCloudTranslateV3.TranslateDocumentResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -324,7 +324,7 @@ extension Clients {
       req.httpBody = try JSONEncoder().encode(request)
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudTranslationV3.TranslateDocumentResponse.self, from: data)
+        GoogleCloudTranslateV3.TranslateDocumentResponse.self, from: data)
     }
 
     public func batchTranslateText(
@@ -424,7 +424,7 @@ extension Clients {
 
     public func listGlossaries(
       request: ListGlossariesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTranslationV3.ListGlossariesResponse {
+    ) async throws -> GoogleCloudTranslateV3.ListGlossariesResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -443,12 +443,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudTranslationV3.ListGlossariesResponse.self, from: data)
+        GoogleCloudTranslateV3.ListGlossariesResponse.self, from: data)
     }
 
     public func getGlossary(
       request: GetGlossaryRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTranslationV3.Glossary {
+    ) async throws -> GoogleCloudTranslateV3.Glossary {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -463,7 +463,7 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudTranslationV3.Glossary.self, from: data)
+        GoogleCloudTranslateV3.Glossary.self, from: data)
     }
 
     public func deleteGlossary(
@@ -488,7 +488,7 @@ extension Clients {
 
     public func getGlossaryEntry(
       request: GetGlossaryEntryRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTranslationV3.GlossaryEntry {
+    ) async throws -> GoogleCloudTranslateV3.GlossaryEntry {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -503,12 +503,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudTranslationV3.GlossaryEntry.self, from: data)
+        GoogleCloudTranslateV3.GlossaryEntry.self, from: data)
     }
 
     public func listGlossaryEntries(
       request: ListGlossaryEntriesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTranslationV3.ListGlossaryEntriesResponse {
+    ) async throws -> GoogleCloudTranslateV3.ListGlossaryEntriesResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -526,12 +526,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudTranslationV3.ListGlossaryEntriesResponse.self, from: data)
+        GoogleCloudTranslateV3.ListGlossaryEntriesResponse.self, from: data)
     }
 
     public func createGlossaryEntry(
       request: CreateGlossaryEntryRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTranslationV3.GlossaryEntry {
+    ) async throws -> GoogleCloudTranslateV3.GlossaryEntry {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -550,12 +550,12 @@ extension Clients {
       }
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudTranslationV3.GlossaryEntry.self, from: data)
+        GoogleCloudTranslateV3.GlossaryEntry.self, from: data)
     }
 
     public func updateGlossaryEntry(
       request: UpdateGlossaryEntryRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTranslationV3.GlossaryEntry {
+    ) async throws -> GoogleCloudTranslateV3.GlossaryEntry {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.glossaryEntry.map({ $0.name }), !pathVariable0.isEmpty
         else {
@@ -576,7 +576,7 @@ extension Clients {
       }
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudTranslationV3.GlossaryEntry.self, from: data)
+        GoogleCloudTranslateV3.GlossaryEntry.self, from: data)
     }
 
     public func deleteGlossaryEntry(
@@ -623,7 +623,7 @@ extension Clients {
 
     public func getDataset(
       request: GetDatasetRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTranslationV3.Dataset {
+    ) async throws -> GoogleCloudTranslateV3.Dataset {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -638,12 +638,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudTranslationV3.Dataset.self, from: data)
+        GoogleCloudTranslateV3.Dataset.self, from: data)
     }
 
     public func listDatasets(
       request: ListDatasetsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTranslationV3.ListDatasetsResponse {
+    ) async throws -> GoogleCloudTranslateV3.ListDatasetsResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -661,7 +661,7 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudTranslationV3.ListDatasetsResponse.self, from: data)
+        GoogleCloudTranslateV3.ListDatasetsResponse.self, from: data)
     }
 
     public func deleteDataset(
@@ -686,7 +686,7 @@ extension Clients {
 
     public func createAdaptiveMtDataset(
       request: CreateAdaptiveMtDatasetRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTranslationV3.AdaptiveMtDataset {
+    ) async throws -> GoogleCloudTranslateV3.AdaptiveMtDataset {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -705,7 +705,7 @@ extension Clients {
       }
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudTranslationV3.AdaptiveMtDataset.self, from: data)
+        GoogleCloudTranslateV3.AdaptiveMtDataset.self, from: data)
     }
 
     public func deleteAdaptiveMtDataset(
@@ -728,7 +728,7 @@ extension Clients {
 
     public func getAdaptiveMtDataset(
       request: GetAdaptiveMtDatasetRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTranslationV3.AdaptiveMtDataset {
+    ) async throws -> GoogleCloudTranslateV3.AdaptiveMtDataset {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -743,12 +743,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudTranslationV3.AdaptiveMtDataset.self, from: data)
+        GoogleCloudTranslateV3.AdaptiveMtDataset.self, from: data)
     }
 
     public func listAdaptiveMtDatasets(
       request: ListAdaptiveMtDatasetsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTranslationV3.ListAdaptiveMtDatasetsResponse {
+    ) async throws -> GoogleCloudTranslateV3.ListAdaptiveMtDatasetsResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -767,12 +767,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudTranslationV3.ListAdaptiveMtDatasetsResponse.self, from: data)
+        GoogleCloudTranslateV3.ListAdaptiveMtDatasetsResponse.self, from: data)
     }
 
     public func adaptiveMtTranslate(
       request: AdaptiveMtTranslateRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTranslationV3.AdaptiveMtTranslateResponse {
+    ) async throws -> GoogleCloudTranslateV3.AdaptiveMtTranslateResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -789,12 +789,12 @@ extension Clients {
       req.httpBody = try JSONEncoder().encode(request)
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudTranslationV3.AdaptiveMtTranslateResponse.self, from: data)
+        GoogleCloudTranslateV3.AdaptiveMtTranslateResponse.self, from: data)
     }
 
     public func getAdaptiveMtFile(
       request: GetAdaptiveMtFileRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTranslationV3.AdaptiveMtFile {
+    ) async throws -> GoogleCloudTranslateV3.AdaptiveMtFile {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -809,7 +809,7 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudTranslationV3.AdaptiveMtFile.self, from: data)
+        GoogleCloudTranslateV3.AdaptiveMtFile.self, from: data)
     }
 
     public func deleteAdaptiveMtFile(
@@ -832,7 +832,7 @@ extension Clients {
 
     public func importAdaptiveMtFile(
       request: ImportAdaptiveMtFileRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTranslationV3.ImportAdaptiveMtFileResponse {
+    ) async throws -> GoogleCloudTranslateV3.ImportAdaptiveMtFileResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -849,12 +849,12 @@ extension Clients {
       req.httpBody = try JSONEncoder().encode(request)
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudTranslationV3.ImportAdaptiveMtFileResponse.self, from: data)
+        GoogleCloudTranslateV3.ImportAdaptiveMtFileResponse.self, from: data)
     }
 
     public func listAdaptiveMtFiles(
       request: ListAdaptiveMtFilesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTranslationV3.ListAdaptiveMtFilesResponse {
+    ) async throws -> GoogleCloudTranslateV3.ListAdaptiveMtFilesResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -872,12 +872,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudTranslationV3.ListAdaptiveMtFilesResponse.self, from: data)
+        GoogleCloudTranslateV3.ListAdaptiveMtFilesResponse.self, from: data)
     }
 
     public func listAdaptiveMtSentences(
       request: ListAdaptiveMtSentencesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTranslationV3.ListAdaptiveMtSentencesResponse {
+    ) async throws -> GoogleCloudTranslateV3.ListAdaptiveMtSentencesResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -895,7 +895,7 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudTranslationV3.ListAdaptiveMtSentencesResponse.self, from: data)
+        GoogleCloudTranslateV3.ListAdaptiveMtSentencesResponse.self, from: data)
     }
 
     public func importData(
@@ -944,7 +944,7 @@ extension Clients {
 
     public func listExamples(
       request: ListExamplesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTranslationV3.ListExamplesResponse {
+    ) async throws -> GoogleCloudTranslateV3.ListExamplesResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -963,7 +963,7 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudTranslationV3.ListExamplesResponse.self, from: data)
+        GoogleCloudTranslateV3.ListExamplesResponse.self, from: data)
     }
 
     public func createModel(
@@ -992,7 +992,7 @@ extension Clients {
 
     public func listModels(
       request: ListModelsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTranslationV3.ListModelsResponse {
+    ) async throws -> GoogleCloudTranslateV3.ListModelsResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -1011,12 +1011,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudTranslationV3.ListModelsResponse.self, from: data)
+        GoogleCloudTranslateV3.ListModelsResponse.self, from: data)
     }
 
     public func getModel(
       request: GetModelRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudTranslationV3.Model {
+    ) async throws -> GoogleCloudTranslateV3.Model {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -1031,7 +1031,7 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudTranslationV3.Model.self, from: data)
+        GoogleCloudTranslateV3.Model.self, from: data)
     }
 
     public func deleteModel(
